@@ -1,0 +1,27 @@
+.bi {
+    margin-left: 50px;
+}
+header {
+    background-color: rgb(184, 82, 104);
+}
+
+footer {
+  background-color: rgb(184, 82, 104);
+}
+.card .card-img-top {
+    width: 150px; /* Defina o tamanho desejado */
+    height: 150px; /* Defina o tamanho desejado */
+    border-radius: 50%; /* Isso tornará a imagem circular */
+    margin: 0 auto; /* Centralize a imagem horizontalmente no card */
+  }
+
+.card-top {
+    width: 200px; /* Defina o tamanho desejado */
+    height: auto; /* Defina o tamanho desejado */
+    margin: 0 auto;
+}
+
+.carousel-item{
+  transition: all;
+  transition-duration: 2s;
+}

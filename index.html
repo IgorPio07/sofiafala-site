@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut-icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>SofiaFala - Software Inteligente de Apoio à Fala</title>
+    <!--Chamando bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!--Chamando css-->
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!--Nav com imagem home download demo publicações imprensa Membros área restrita
+        colabore com o sofia fala-->
+    <section id="nav">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-2"
+      >
+        <a
+          href="./index.html"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis"
+        >
+          <img
+            src="./images/logoSofiaFala.jpg"
+            class="bi me-2 figure-img"
+            height="70"
+          />
+        </a>
+
+        <ul class="nav nav-pills my-auto">
+          <li class="nav-item">
+            <a href="https://dcm.ffclrp.usp.br/coleta/html/inicio.php" class="nav-link text-white text-bg-success">Doar Voz</a>
+          </li>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link text-white">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="sobre.html" class="nav-link text-white">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Publicacoes" class="nav-link text-white">Publicações</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Notícias Imprensa" class="nav-link text-white">Imprensa</a>
+          </li>
+          <li class="nav-item">
+            <a href="./membros.html" class="nav-link text-white">Membros</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">Área Restrita</a>
+          </li>
+        </ul>
+      </header>
+    </section>
+
+    <!--Carrosel-->
+    <section id="myCarousel">
+        <div class="container col-lg-9 col-md-6 col-sm-12">
+            <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/slider1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item transition-duration-1">
+                    <img src="./images/slider2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item transition-duration-1">
+                    <img src="./images/slider3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item transition-duration-1">
+                    <img src="./images/slider7.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item transition-duration-1">
+                    <img src="./images/slider8.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+      </section>
+    <!--Área coleta Participativa-->
+    <section id="Coleta Participativa">
+      <div class="container col-lg-9">
+        <div class="px-4 py-5 my-5 text-center">
+          <h2 class="display-5 fw-bold text-body-emphasis">Coleta Participativa</h2>
+          <div class="row">
+            <div class="col-12">
+              <hr class="w-100">
+            </div>
+          </div>
+          <div class="mx-auto">
+            <p class="lead mb-4 pt-2">O grupo SofiaFala convida pessoas (crianças, adolescentes e adultos) com distúrbio de fala para participar da criação de um conjunto de gravações de áudios de fala comprometida anonimizados (sem identificação pessoal) para serem oferecidos á comunidade científica que investiga o processamento da língua portuguesa. Com essa atitude, pretende-se divulgar, incentivar e engajar essa comunidade no desenvolvimento de ferramentas computacionais de suporte ao processo de identificação, reabilitação e acompanhamento de crianças, adolescentes ou adultos com transtorno de linguagem e fala.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn text-bg-success btn-lg px-4 gap-3">
+                <a href="https://dcm.ffclrp.usp.br/coleta/html/inicio.php" class="text-white" style="text-decoration: none;">
+                  Quero Participar!
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Notícias-->
+    <!--Vídeo-->
+    <section id="Notícias Imprensa">
+      <div class="container text-center mx-auto">
+        <h2 class="display-5 fw-bold text-body-emphasis">Notícias</h2>
+        <div class="row">
+          <div class="col-12">
+            <hr class="w-100">
+          </div>
+        </div>
+        <div class="row mx-auto col-lg-6">
+          <video id="videoReportagemSbt" controls="">
+            <source id="fonteReportagemSbt" src="./images/reportagem_sbt.mp4" type="video/mp4">
+          </video>
+          <p class="card__text pt-3"><a href="https://www.facebook.com/watch/live/?v=213717217131506&amp;ref=watch_permalink&amp;t=1037" target="_blank" style="color: #000000; font-size: 1.5rem;">Programa SBT Noticidade</a></p>
+        </div>
+    <!--Cards-->
+        <div class="row pt-5 row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <a href="https://webmedia.org.br/2022/premio-lf/"><img src="./images/logo_USP.png" class="card-img-top mt-2"></a>
+              <div class="card-body">
+                <p class="card-text text-body-secondary">Jornal da USP</p>
+                <p class="card-text">Aplicativo desenvolvido na USP ajuda a treinar fala de crianças com Down.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://jornal.usp.br/?p=223525"><button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card">
+              <a href="https://webmedia.org.br/2022/premio-lf/"><img src="./images/premio-LF.png" class="card-img-top mt-2"></a>
+              <div class="card-body">
+                <p class="card-text text-body-secondary">Prêmio LF de computação 2021</p>
+                <p class="card-text">Aplicativo vencedor do Prêmio Luiz Fernando de Computação do WebMedia 2021.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://webmedia.org.br/2022/premio-lf/"><button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card">
+              <a><img src="./images/logo_g1.png" class="card-img-top mt-2"></a>
+              <div class="card-body">
+                <p class="card-text text-body-secondary">EPTV</p>
+                <p class="card-text">Aplicativo desenvolvido em Ribeirão Preto para crianças com Down analisa e corrige a fala.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://g1.globo.com/sp/ribeirao-preto-franca/noticia/2019/03/07/aplicativo-desenvolvido-em-ribeirao-preto-para-criancas-com-down-analisa-e-corrige-a-fala.ghtml"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./images/logo_techmundo.webp" class="card-img-top mt-2">
+              <div class="card-body">
+                <p class="card-text text-body-secondary">TECMUNDO</p>
+                <p class="card-text">Aplicativo facilita a comunicação de crianças com síndrome de Down.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://www.tecmundo.com.br/software/139547-aplicativo-facilita-comunicacao-criancas-sindrome-down.htm"></a><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./images/logo_g1.png" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text text-body-secondary">EPTV</p>
+                <p class="card-text">Aplicativo ajuda na comunicação de portadores de Síndrome de Down.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://g1.globo.com/globonews/jornal-globonews-edicao-das-16/video/aplicativo-ajuda-na-comunicacao-de-portadores-de-down-7670285.ghtml"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./images/logo_estado_sp.png" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text text-body-secondary">SP NOTÍCIAS</p>
+                <p class="card-text">Aplicativo ajuda a treinar fala de crianças com Síndrome de Down.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="http://www.saopaulo.sp.gov.br/spnoticias/aplicativo-ajuda-a-treinar-fala-de-criancas-com-sindrome-de-down/"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Publicações-->
+    <section id="Publicacoes">
+      <div class="container col-lg-9 mt-5 text-center mb-5">
+        <h2 class="fw-bold display-6 text-body-emphasis">Listagem de Publicações Acadêmicas</h2>
+        <div class="row">
+          <div class="col-12">
+            <hr class="w-100">
+          </div>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item ">
+                <p class="text-body-secondary">RESUMOS EXPANDIDOS PUBLICADOS EM ANAIS DE CONGRESSOS</p>
+                <p class="h4"><b>SofiaFala: Software Inteligente de Apoio à Fala</b></p>
+                <p class="text-body-secondary">RISSATO, P.H.D.G.; MACEDO, A.A.<br>
+                Anais estendidos do Simpósio Brasileiro de Sistemas Multimídia e Web (WEBMEDIA), 2021, Porto Alegre - RS. p. 91-94.
+                </p>
+                <p><strong>DOI:</strong> <a href="https://doi.org/10.5753/webmedia_estendido.2021.17620" target="_blank">https://doi.org/10.5753/webmedia_estendido.2021.17620</a></p>
+            </li>
+        </ul>
+      
+        <ul class="list-group mt-3">
+          <li class="list-group-item">
+          <p class="text-body-secondary">PERIÓDICOS INTERNACIONAIS</p>
+          <p class="h4"><b>An Analysis of Visual Speech Features for Recognition of Non-articulatory Sounds using Machine Learning
+          </b></p>
+          <p class="text-body-secondary">SOUZA, F.C.M.; SOUZA, A.C.C.; WATANABE, C.; MANDRA, P.P.; MACEDO, A.A.<br>
+            International Journal of Computer Applications, v. 177, p. 1-9, 2019.
+          </p>
+          <p><strong>DOI:</strong> <a href="https://doi.org/10.5120/ijca2019919393" target="_blank">https://doi.org/10.5120/ijca2019919393</a></p>
+          </li>
+        </ul>
+
+        <ul class="list-group list-group-item mt-3">
+          <li class="list-group">
+          <p class="text-body-secondary">TRABALHOS COMPLETOS PUBLICADOS EM ANAIS DE CONGRESSOS</p>
+          <p class="h4"><b>Speech Emotion Recognition in Portuguese for SofiaFala: SER SofiaFala
+          </b></p>
+          <p class="text-body-secondary">SCARANTI, A.; SILVA, D.A.R.; MELONI, F.; MACEDO, A.A.<br>
+            Automatic Speech Recognition for spontaneous and prepared speech & Speech Emotion Recognition in Portuguese (SE&R 2022) Workshop at 15th edition of the International Conference on the Computational Processing of Portuguese (PROPOR 2022), 2022, Fortaleza. CEUR Workshop Proceedings (CEUR-WS.org), 2022. p. 5P.
+          </p>
+          <p><strong>DOI:</strong> <a href="http://ceur-ws.org/Vol-3175/paper05.pdf" target="_blank">http://ceur-ws.org/Vol-3175/paper05.pdf</a></p>
+          </li>
+          <li class="list-group mt-5">
+            <p class="h4"><b>Detection and Evaluation of Speech Intelligibility with Speech Tool
+            </b></p>
+            <p class="text-body-secondary">SCARANTI, A.; SILVA, D.A.R.; MELONI, F.; MACEDO, A.A.<br>
+              Automatic Speech Recognition for spontaneous and prepared speech & Speech Emotion Recognition in Portuguese (SE&R 2022) Workshop at 15th edition of the International Conference on the Computational Processing of Portuguese (PROPOR 2022), 2022, Fortaleza. CEUR Workshop Proceedings (CEUR-WS.org), 2022. p. 5P.
+            </p>
+            <p><strong>DOI:</strong> <a href="http://ceur-ws.org/Vol-3175/paper05.pdf" target="_blank">http://ceur-ws.org/Vol-3175/paper05.pdf</a></p>
+          </li>
+        </ul>
+    </div>
+    </section>
+
+    <section id="rodape">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-auto border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="./index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <img src="./images/favicon.ico" class="bi" width="30" height="30">
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© SofiaFala - Departamento de Computação e Matemática - USP</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="mailto:sofiafala.contato@gmail.com"><img width="20" height="20" src="./images/arroba-svgrepo-com.svg"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://maps.app.goo.gl/shoTrjBEaSqpf2Q19"><img src="./images/home-icon.svg" width="20" height="20"></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="tel:1633154864"><img src="./images/phone-icon.svg" width="22" height="22"></a></li>
+        </ul>
+      </footer>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
