@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut-icon" href="images/favicon.ico" type="image/x-icon" />
+  <title>SofiaFala - Software Inteligente de Apoio à Fala</title>
+  <!--Chamando bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <!--Chamando css-->
+  <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section id="nav">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-2">
+      <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis">
+        <img src="./images/logoSofiaFala.jpg" class="bi me-2 figure-img" height="70" />
+      </a>
+
+      <ul class="nav nav-pills my-auto">
+        <li class="nav-item">
+          <a href="https://dcm.ffclrp.usp.br/coleta/html/inicio.php" class="nav-link text-white text-bg-success">Doar
+            Voz</a>
+        </li>
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link text-white">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="sobre.html" class="nav-link text-white">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Publicacoes" class="nav-link text-white">Publicações</a>
+        </li>
+        <li class="nav-item">
+          <a href="#Notícias Imprensa" class="nav-link text-white">Imprensa</a>
+        </li>
+        <li class="nav-item">
+          <a href="./membros.html" class="nav-link text-white">Membros</a>
+        </li>
+        <!-- <li class="nav-item">
+              <a href="#" class="nav-link text-white">Área Restrita</a>
+           </li> -->
+      </ul>
+    </header>
+  </section>
+
+  <section>
+    <div class="container col-lg-9 text-center">
+      <p class="h1">Importante</p>
+      <p class="h2">Leia antes de continuar</p>
+      <hr />
+      <p class="text-body-emphasis">
+        <strong>Este software somente está disponível para o sistema
+          Android</strong>
+      </p>
+      <hr />
+      <div class="mx-auto">
+        <p class="lead mb-4 pt-2">
+          O download do SofiaFala deve ser feito pelo fonoaudiólogo que irá
+          indicar o uso e realização de exercícios com o aplicativo. Para
+          fazer o download, o fonoaudiólogo deve preencher o cadastro clicando
+          no botão "Para Fonos" para então receber códigos de acesso e
+          distribuir aos seus pacientes. Com o código fornecido pelo
+          fonoaudiólogo, o paciente poderá baixar o aplicativo clicando no
+          botão "Para Pacientes" e para utilizar o aplicativo, um
+          usuário/senha será cadastrado diretamente pelo profissional
+          fonoaudiólogo no aplicativo de uso exclusivo deste. Infelizmente, o
+          fato do aplicativo ter sido gerado como produto de um projeto de
+          pesquisa já finalizado indisponibiliza suporte técnico para
+          eventuais dúvidas e problemas técnicos. Em relação a dúvidas, os
+          seguintes vídeos de demonstração foram preparados para esse fim.
+        </p>
+        <hr />
+      </div>
+    </div>
+  </section>
+
+  <section id="divDownload" class="my-auto">
+    <div class="container text-center align-items-center">
+      <p class="h2">Download</p>
+      <button type="button" class="button btn mx-2" data-toggle="modal" data-target="#modalDownload">Para
+        Pacientes</button>
+
+
+      <button type="button" class="button btn mx-2" onclick="showHideComponent('divDownloadFono')">Para
+        Fono</button>
+    </div>
+
+    <div class="modal fade" id="modalDownload" tabindex="-1" role="dialog" aria-labelledby="modalDownloadLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="modalDownloadLabel">Download SofiaFala</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div style="text-align: center" class="modal-body">
+            <label for="token">Digite sua chave de acesso:</label>
+            <input id="token" type="text">
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="button-small-close" data-dismiss="modal">Fechar</button>
+            <button class="button-small" onclick="checkDownload(document.getElementById('token').value);">Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="divDownloadFono" style="text-align: center; display: none;">
+      <p>Caso você seja profissional da área de fonoaudiologia, preencha o formulário abaixo, para solicitar acesso e
+        começar a utilizar o SofiaFala com seus pacientes!</p>
+
+      <div style="text-align: center">
+        <iframe id="formgoogle"
+          src="https://docs.google.com/forms/d/e/1FAIpQLScpeqxCYwrTzZtruLY_oE9AWcxgQdsDsAtafyjloZ-5x2WopA/viewform?embedded=true"
+          width="100%" height="2640" frameborder="0" marginheight="0" marginwidth="0"
+          onload="loaded()">Carregando...</iframe>
+      </div>
+
+      <div id="codigosAcesso"
+        style="display: none; text-align: center; border-style: ridge; position: relative; top: -200px;">
+        <img id="logoCodigosAcesso" align="left" src="./images/logoSofiaFala.jpg" width="20%" height="auto">
+        <h4 style="display: inline-block; font-weight: bold;">Códigos de Acesso<br>
+        </h4>
+        <h5>Abaixo estão seus códigos de acesso. Cada código permite que 01 (um) paciente faça o download do aplicativo
+          SofiaFala.</h5>
+
+        <table style="text-align: center" id="codesTable" class="table table-bordered">
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section id="rodape">
+    <footer class="d-flex fixed-bottom flex-wrap justify-content-between align-items-center py-3 my-auto border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="./index.html" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <img src="./images/favicon.ico" class="bi" width="30" height="30">
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© SofiaFala - Departamento de Computação e Matemática -
+          USP</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="mailto:sofiafala.contato@gmail.com"><img width="20"
+              height="20" src="./images/arroba-svgrepo-com.svg"></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://maps.app.goo.gl/shoTrjBEaSqpf2Q19"><img
+              src="./images/home-icon.svg" width="20" height="20"></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="tel:1633154864"><img src="./images/phone-icon.svg"
+              width="22" height="22"></a></li>
+      </ul>
+    </footer>
+  </section>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
