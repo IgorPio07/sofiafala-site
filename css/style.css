@@ -2,11 +2,11 @@
     margin-left: 50px;
 }
 header {
-    background-color: rgb(184, 82, 104);
+    background-color: #BC7271;
 }
 
 footer {
-  background-color: rgb(184, 82, 104);
+  background-color: #BC7271;
 }
 .card .card-img-top {
     width: 150px; /* Defina o tamanho desejado */
@@ -26,7 +26,7 @@ footer {
   transition-duration: 2s;
 }
 .button{
-  background-color: rgb(184, 82, 104);
+  background-color:#BC7271;
   border-radius: 5px;
   padding: 15px 32px;
   border: none;
